@@ -59,7 +59,7 @@ def upstatus(statusfile,message):
 # progress writter
 def progress(current, total, message, type):
 	with open(f'{message.id}{type}status.txt',"w") as fileup:
-		fileup.write(f"{current * 1000/ total:.1f}%")
+		fileup.write(f"{current * 100/ total:.1f}%")
 
 
 # start command
